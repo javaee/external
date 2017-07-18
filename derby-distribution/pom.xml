@@ -43,7 +43,6 @@
         <tools.jar.path>${java.home}/../lib/tools.jar</tools.jar.path>
         <ant.classpath>${ant.path}:${ant.launcher.path}:${ant.bcel.path}:${bcel.path}:${junit.path}:${ant.junit.path}:${tools.jar.path}</ant.classpath>
         <ant.mainClass>org.apache.tools.ant.launch.Launcher</ant.mainClass>
-        <maven.deploy.skip>true</maven.deploy.skip>
     </properties>
 
     <scm>
