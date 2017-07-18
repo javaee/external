@@ -10,7 +10,7 @@
     <groupId>org.glassfish.external</groupId>
     <artifactId>derby-distribution</artifactId>
     <version>10.13.1.1-SNAPSHOT</version>
-    <packaging>zip</packaging>
+    <packaging>pom</packaging>
     <name>JavaDB distribution for GlassFish</name>
 
     <licenses>
