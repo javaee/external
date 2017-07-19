@@ -121,10 +121,12 @@
                                 <artifact>
                                     <file>${project.basedir}/release/distributions/derby-distribution-${javadb.version}-bin.zip</file>
                                     <type>zip</type>
+                                    <classifier>zipFile</classifier>
                                 </artifact>
                                 <artifact>
                                     <file>${project.basedir}/derby-distribution.pom</file>
                                     <type>pom</type>
+                                    <classifier>pomFile</classifier>
                                 </artifact>    
                             </artifacts>
                         </configuration>
