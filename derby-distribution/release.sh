@@ -50,9 +50,19 @@
 #            <password>password</password>
 #        </server>
 #    </servers>
-
+#    <profiles>
+#      <profile>
+#        <id>release</id>
+#        <properties>
+#          <release.arguments>-Dhttps.proxyHost=www-proxy.us.oracle.com -Dhttps.proxyPort=80 -Dgpg.passphrase=glassfish -Pjvnet-release</release.arguments>
+#        </properties>
+#        <activation>
+#          <activeByDefault>false</activeByDefault>
+#        </activation>
+#      </profile>
+#    </profiles>
 # see the following URL for gpg issues
 # https://docs.sonatype.org/display/Repository/How+To+Generate+PGP+Signatures+With+Maven#HowToGeneratePGPSignaturesWithMaven-GenerateaKeyPair
 
-mvn -X -B $* release:prepare -DpreparationGoals="install -P\!jvnet-release"
-mvn -X -B $* release:perform -Dgoals="deploy $* -Dgpg.passphrase=glassfish -Pjvnet-release"
+mvn -B release:prepare -Prelease
+mvn -B release:perform -Prelease

@@ -9,7 +9,7 @@
 
     <groupId>org.glassfish.external</groupId>
     <artifactId>derby-distribution</artifactId>
-    <version>10.13.1.2-SNAPSHOT</version>
+    <version>10.13.1.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>JavaDB distribution for GlassFish</name>
 
@@ -53,8 +53,7 @@
             scm:git:git@github.com:pranjal10/external.git
         </developerConnection>
         <url>git@github.com:pranjal10/external.git</url>
-      <tag>HEAD</tag>
-  </scm>
+    </scm>
     <profiles>
         <profile>
             <id>mac</id>
