@@ -9,7 +9,7 @@
 
     <groupId>org.glassfish.external</groupId>
     <artifactId>derby-distribution</artifactId>
-    <version>10.13.1.2-SNAPSHOT</version>
+    <version>10.13.1.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>JavaDB distribution for GlassFish</name>
 
@@ -32,7 +32,7 @@
  
     <!-- some properties to set the classpath manually -->
     <properties>
-        <javadb.version>10.13.1.1</javadb.version>
+        <derby.version>10.13.1.1</derby.version>
         <stage.dir>${project.build.directory}/derby-distribution-${project.version}-bin</stage.dir>
         <ant.path>${settings.localRepository}/org/apache/ant/ant/1.9.0/ant-1.9.0.jar</ant.path>
         <ant.launcher.path>${settings.localRepository}/org/apache/ant/ant-launcher/1.9.0/ant-launcher-1.9.0.jar</ant.launcher.path>
@@ -53,8 +53,7 @@
             scm:git:git@github.com:pranjal10/external.git
         </developerConnection>
         <url>git@github.com:pranjal10/external.git</url>
-      <tag>HEAD</tag>
-  </scm>
+    </scm>
     <profiles>
         <profile>
             <id>mac</id>
@@ -120,7 +119,7 @@
                         <configuration>
                             <artifacts>
                                 <artifact>
-                                    <file>${project.basedir}/release/distributions/derby-distribution-${javadb.version}-bin.zip</file>
+                                    <file>${project.basedir}/release/distributions/derby-distribution-${derby.version}-bin.zip</file>
                                     <type>zip</type>
                                 </artifact>
                             </artifacts>
